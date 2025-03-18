@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  user-select: none;
 }
 
 html {
@@ -14,7 +15,7 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
-  height: 100vh;
+  height: 100dvh;
   color: #333;
   background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
   display: flex;
@@ -138,6 +139,9 @@ main {
 .btn--hold {
   top: 46.1rem;
 }
+.btn--how-to-play {
+  top: 18%;
+}
 
 .btn:active {
   transform: translate(-50%, 3px);
@@ -166,6 +170,119 @@ main {
   color: #c7365f;
 }
 
+.how-to-play {
+  background-color: #2f2f2f;
+  color: #c7365f;
+  height: 40rem;
+  width: 60%;
+  max-width: 60rem;
+  min-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+  text-align: start;
+  border-radius: 9px;
+  border: none;
+  transition: all 0.75s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.blur {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  position: fixed;
+  z-index: 5;
+}
+.how-to-play h1 {
+  margin-bottom: auto;
+}
+
+.how-to-play ol {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: auto;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
 .hidden {
   display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 62em) {
+  main {
+    width: 60rem;
+    height: 100rem;
+    flex-direction: column;
+  }
+  .btn--roll {
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+  .btn--hold {
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 16rem;
+  }
+  .btn--new {
+    top: 5%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+  .btn--how-to-play {
+    top: 5%;
+    left: 77%;
+    width: 24rem;
+    transform: translate(-50%, -50%);
+  }
+  .btn {
+    font-size: 2rem;
+  }
+  .dice {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .how-to-play {
+    height: 48rem;
+  }
+}
+
+@media (max-width: 36em) {
+  main {
+    width: 45rem;
+    height: 100rem;
+    flex-direction: column;
+  }
+  html {
+    font-size: 50%;
+  }
+  .btn--new {
+    top: 5%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+  }
+  .btn--how-to-play {
+    width: 20rem;
+    left: 75%;
+  }
+  .btn {
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+  }
+  .dice {
+    height: 9rem;
+  }
 }

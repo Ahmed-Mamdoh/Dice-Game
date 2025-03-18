@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <title>Pig Game</title>
   </head>
   <body>
@@ -30,7 +31,33 @@
       <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn btn--how-to-play">❓ How to play?</button>
     </main>
-    <script src="script.js"></script>
+
+    <section class="how-to-play hidden">
+      <h1>How To Play</h1>
+      <ol>
+        <li>Player 1 starts the game.</li>
+        <li>
+          Click "Roll Dice" to roll a random dice number (1-6).
+          <ul>
+            <li>
+              If the result is 2-6, the number is added to the current score.
+            </li>
+            <li>
+              If the result is 1, the turn is lost, and the next player takes
+              over.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Click "Hold" to save the current score to the total score and pass the
+          turn.
+        </li>
+        <li>First player to reach 50 points wins.</li>
+        <li>Click "New Game" to reset and start over.</li>
+      </ol>
+    </section>
+    <div class="blur hidden"></div>
   </body>
 </html>
