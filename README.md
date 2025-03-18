@@ -31,4 +31,4 @@ A fun, interactive dice game built as part of Jonas Schmedtmann's Udemy course o
 
 ## Demo
 
-You can check out the live demo [here](#)
+You can check out the live demo [here](https://mamdoh-dice-game.netlify.app/)
