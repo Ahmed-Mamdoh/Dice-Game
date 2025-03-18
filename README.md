@@ -34,22 +34,3 @@ A fun, interactive dice game built as part of Jonas Schmedtmann's Udemy course o
 
 ## Demo
 You can check out the live demo [here](https://mamdoh-dice-game.netlify.app/)
-
-
-## How to Play
-
-1. Player 1 starts the game.
-2. Click "Roll Dice" to roll a random dice number (1-6).
-   - If the result is 2-6, the number is added to the current score.
-   - If the result is 1, the turn is lost, and the next player takes over.
-3. Click "Hold" to save the current score to the total score and pass the turn.
-4. First player to reach 100 points wins.
-5. Click "New Game" to reset and start over.
-
-## Screenshots
-
-![image (4)](https://github.com/user-attachments/assets/bb9787ea-c409-44fb-b9c0-200d14ec0dd4)
-
-## Demo
-
-You can check out the live demo [here](https://mamdoh-dice-game.netlify.app/)
