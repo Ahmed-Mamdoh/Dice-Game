@@ -7,7 +7,7 @@ A fun, interactive dice game built as part of Jonas Schmedtmann's Udemy course o
 - Rolling dice to accumulate points
 - Holding score to secure points
 - Losing progress when rolling a 1
-- First player to reach 100 points wins
+- First player to reach 50 points wins
 - New game reset functionality
 - **Responsive design for different screen sizes (implemented with media queries)**
 - **"How to Play" button for easy instructions**
